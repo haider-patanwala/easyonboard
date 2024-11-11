@@ -1,10 +1,8 @@
-## NextStep
+## EasyOnboard
 
-![NextStep](./public/nextstepjs.png)
+EasyOnboard is a lightweight onboarding library for Next.js applications. It utilizes [framer-motion](https://www.framer.com/motion/) for smooth animations.
 
-**NextStep** is a lightweight onboarding library for Next.js applications. It utilizes [framer-motion](https://www.framer.com/motion/) for smooth animations.
-
-**Some of the use cases:**
+**Some of the use cases**
 
 - **Easier Onboarding**: Guide new users with step-by-step tours
 - **Engagement Boost**: Make help docs interactive, so users learn by _doing_.
@@ -17,8 +15,7 @@ The library allows users to use custom cards (tooltips) for easier integration.
 
 **If you like the project, please leave a star! ⭐️⭐️⭐️⭐️⭐️**
 
-- **[Demo App](https://nextstepjs.com)**
-- **[Demo repository](https://github.com/enszrlu/NextStep-Website)**
+- **[Demo repository](https://github.com/haider-patanwala/easyonboard.git)**
 
 ## Getting Started
 
@@ -158,7 +155,7 @@ const steps: Tour[] = [
 | `pointerRadius`        | `number`                                 | Optional. The border-radius of the pointer (keyhole) highlighting the target element.                                                               |
 | `nextRoute`            | `string`                                 | Optional. The route to navigate to using `next/navigation` when moving to the next step.                                                            |
 | `prevRoute`            | `string`                                 | Optional. The route to navigate to using `next/navigation` when moving to the previous step.                                                        |
-| `viewportID`           | `string`                                 | Optional. The id of the viewport element to use for positioning. If not provided, the document body will be used. **(Available after > v1.1.x)**    |
+| `viewportID`           | `string`                                 | Optional. The id of the viewport element to use for positioning. If not provided, the document body will be used.**(Available after > v1.1.x)**     |
 
 > **Note** `NextStep` handles card cutoff from screen sides. If side is right or left and card is out of the viewport, side would be switched to `top`. If side is top or bottom and card is out of the viewport, then side would be flipped between top and bottom.
 
@@ -297,7 +294,7 @@ const onClickHandler = (tourName: string) => {
 
 ## Keyboard Navigation
 
-NextStep supports keyboard navigation:
+EasyOnboard supports keyboard navigation:
 
 - Right Arrow: Next step
 - Left Arrow: Previous step
@@ -305,7 +302,7 @@ NextStep supports keyboard navigation:
 
 ## Localization
 
-NextStep is a lightweight library and does not come with localization support. However, you can easily switch between languages by supplying the `steps` array based on locale.
+EasyOnboard is a lightweight library and does not come with localization support. However, you can easily switch between languages by supplying the `steps` array based on locale.
 
 ## Contributing
 
@@ -317,4 +314,4 @@ This project is licensed under the MIT License.
 
 ## Credits
 
-- [Onborda](https://github.com/uixmat/onborda) for the inspiration and some code snippets.
+- [Onborda](https://github.com/uixmat/onborda) & [NextStep](https://github.com/enszrlu/NextStep-Website) for the inspiration and some code snippets.
