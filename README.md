@@ -9,25 +9,19 @@ EasyOnboard is a lightweight onboarding library for Next.js applications. It uti
 - **Better Error Handling**: Skip generic toasters—show users exactly what to fix with tailored tours.
 - **Event-Based Tours**: Trigger custom tours after key actions to keep users coming back.
 
-> **Note** `NextStep` now supports non-tailwindcss projects with v1.2 onwards.
-
 The library allows users to use custom cards (tooltips) for easier integration.
-
-**If you like the project, please leave a star! ⭐️⭐️⭐️⭐️⭐️**
-
-- **[Demo repository](https://github.com/haider-patanwala/easyonboard.git)**
 
 ## Getting Started
 
 ```bash
 # npm
-npm i nextstepjs framer-motion
+npm i easyonboarding framer-motion
 # pnpm
-pnpm add nextstepjs framer-motion
+pnpm add easyonboarding framer-motion
 # yarn
-yarn add nextstepjs framer-motion
+yarn add easyonboarding framer-motion
 # bun
-bun add nextstepjs framer-motion
+bun add easyonboarding framer-motion
 ```
 
 ### App Router: Global `layout.tsx`
@@ -54,7 +48,7 @@ Wrap your application in `NextStepProvider` and supply the `steps` array to Next
 
 #### Troubleshooting
 
-If you encounter an error related to module exports when using the Pages Router, it is likely due to a mismatch between ES modules (which use `export` statements) and CommonJS modules (which use `module.exports`). The `nextstepjs` package uses ES module syntax, but your Next.js project might be set up to use CommonJS.
+If you encounter an error related to module exports when using the Pages Router, it is likely due to a mismatch between ES modules (which use `export` statements) and CommonJS modules (which use `module.exports`). The `easyonboarding` package uses ES module syntax, but your Next.js project might be set up to use CommonJS.
 
 To resolve this issue, ensure that your Next.js project is configured to support ES modules. You can do this by updating your `next.config.js` file to include the following configuration:
 
@@ -65,7 +59,7 @@ const nextConfig = {
   experimental: {
     esmExternals: true,
   },
-  transpilePackages: ['nextstepjs'],
+  transpilePackages: ['easyonboarding'],
 };
 
 export default nextConfig;
@@ -87,7 +81,7 @@ You can create a custom card component for greater control over the design:
 
 ```tsx
 'use client';
-import type { CardComponentProps } from 'nextstepjs';
+import type { CardComponentProps } from 'easyonboarding';
 
 export const CustomCard = ({
   step,
@@ -121,7 +115,7 @@ export const CustomCard = ({
 NextStep supports multiple "tours", allowing you to create multiple product tours:
 
 ```tsx
-import { Tour } from 'nextstepjs';
+import { Tour } from 'easyonboarding';
 
 const steps: Tour[] = [
   {
@@ -282,7 +276,7 @@ Here's an example of how to use `NextStepViewport`:
 useNextStep hook allows you to control the tour from anywhere in your app.
 
 ```tsx
-import { useNextStep } from 'nextstepjs';
+import { useNextStep } from 'easyonboarding';
 ....
 
 const { startNextStep, closeNextStep } = useNextStep();
