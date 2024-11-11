@@ -1,9 +1,9 @@
 {
-  "name": "nextstepjs",
-  "version": "1.2.2",
+  "name": "easyonboard",
+  "version": "1.0.0",
   "description": "Lightweight onboarding library for Next.js",
   "license": "MIT",
-  "author": "Alex Enes Zorlu",
+  "author": "Haider Patanwala",
   "homepage": "https://nextstepjs.com",
   "repository": {
     "type": "git",
