@@ -245,10 +245,10 @@ const NextStep = ({ children, steps, shadowRgb = '0, 0, 0', shadowOpacity = '0.2
                 inline: 'center',
             });
         }
-        else {
-            // Scroll to the top of the body
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        // else {
+        // Scroll to the top of the body
+        // window.scrollTo({ top: 0, behavior: 'smooth' });
+        // }
     }, [elementToScroll, isInView, isNextStepVisible]);
     // - -
     // Update pointer position on window resize
