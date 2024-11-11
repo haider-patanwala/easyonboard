@@ -1,13 +1,12 @@
 {
   "name": "easyonboarding",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight onboarding library for Next.js",
   "license": "MIT",
   "author": "Haider Patanwala",
-  "homepage": "https://nextstepjs.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enszrlu/NextStep.git"
+    "url": "git+https://github.com/haider-patanwala/easyonboard.git"
   },
   "keywords": [
     "react-onboarding",
