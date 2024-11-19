@@ -74,8 +74,6 @@ const NextStep: React.FC<NextStepProps> = ({
   // Initialize
   useEffect(() => {
     if (isNextStepVisible && currentTourSteps) {
-      console.log('NextStep: Current Step Changed');
-
       const step = currentTourSteps[currentStep];
 
       // Default viewport is the body
@@ -218,7 +216,6 @@ const NextStep: React.FC<NextStepProps> = ({
   // Update pointerPosition when currentStep changes
   useEffect(() => {
     if (isNextStepVisible && currentTourSteps) {
-      console.log('NextStep: Current Step Changed');
       const step = currentTourSteps[currentStep];
 
       // Default viewport is the body
@@ -290,8 +287,6 @@ const NextStep: React.FC<NextStepProps> = ({
 
   useEffect(() => {
     if (elementToScroll && !isInView && isNextStepVisible) {
-      console.log('NextStep: Element to Scroll Changed');
-
       const side = checkSideCutOff(currentTourSteps?.[currentStep]?.side || 'right');
       elementToScroll.scrollIntoView({
         behavior: 'smooth',
